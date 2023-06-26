@@ -1,5 +1,4 @@
 
-
 $('#btnSaveCustomer').click(function (event) {
     cusSave($('#customerId').val(),$('#customerName').val(),$('#customerAddress').val(),$('#customerSalary').val());
 
@@ -299,3 +298,7 @@ function clearAllCusData() {
     $('#cSalary').val("");
     $('#cAddress').val("");
 }
+$(document).ready(function () {
+    cusSave("C001","Vidura","Panadura",25000);
+    cusSave("C002","Rames","Galle",30000);
+})

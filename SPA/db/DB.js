@@ -1,5 +1,5 @@
-var customerAr=[];
-var itemAr=[];
-var tempOrderCartAr=[];
-var orders=[];
+var customerAr = [];
+var itemAr = [];
+var tempOrderCartAr = [];
+var orders = [];
 
