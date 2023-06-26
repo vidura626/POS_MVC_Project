@@ -52,6 +52,33 @@
     <!--Main Dashboard-->
     <section>
         <div class="row container-order">
+            <div class="col-7">
+                <!--All Order Title-->
+                <div>
+                    <div class="row " style="margin-top: 1.2rem">
+                        <div class="p-1 px-3 col rounded-3 fw-bolder text-dark fs-3 mt-1"><i
+                                class="fas fa-chart-line me-2"></i>
+                            ORDERS LIST
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar ">
+                    <table class="table table-hover table-borderless table-striped ">
+                        <thead class="bg-dark text-light">
+                        <tr>
+                            <th scope="col">Order ID</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Discount</th>
+                            <th scope="col">Sub Total(Rs)</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblOrder">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="col-5">
                 <!--Head/Dashboard Title-->
                 <div>
@@ -63,26 +90,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!--Selector field-->
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <select id="chooseOrderType" class="form-select form-select-ls mt-4"
-                                aria-label=".form-select-lg example">
-                            <option selected>ID</option>
-                        </select>
-                    </div>
-
-                    <!--Search bar with button-->
-                    <div class="col-12 col-sm-9 col-lg-10">
-                        <form class="d-flex mt-3 mt-sm-4">
-                            <input class="form-control me-2" id="searchOrder" type="search" placeholder="Search Item"
-                                   aria-label="Search">
-                            <button id="btnSearchOrder" class="btn btn-outline-primary" type="button">Search
-                            </button>
-                        </form>
-                    </div>
-
-                    <!--Order Detail Title Row -->
-                    <div class="p-3 rounded-3  text-dark fw-bolder mt-4" style="text-align: center">ORDER DETAILS</div>
 
                     <!--Order Detail Body-->
                     <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
@@ -138,35 +145,28 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <!--All Order Title-->
-                <div>
-                    <div class="row " style="margin-top: 1.2rem">
-                        <div class="p-1 px-3 col rounded-3 fw-bolder text-dark fs-3 mt-1"><i
-                                class="fas fa-chart-line me-2"></i>
-                            ORDERS LIST
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar ">
-                    <table class="table table-hover table-borderless table-striped ">
-                        <thead class="bg-dark text-light">
-                        <tr>
-                            <th scope="col">Order ID</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Customer Name</th>
-                            <th scope="col">Discount</th>
-                            <th scope="col">Sub Total(Rs)</th>
-                        </tr>
-                        </thead>
-                        <tbody id="tblOrder">
 
-                        </tbody>
-                    </table>
+                    <!--Selector field-->
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <select id="chooseOrderType" class="form-select form-select-ls mt-4"
+                                aria-label=".form-select-lg example">
+                            <option selected>ID</option>
+                        </select>
+                    </div>
+
+                    <!--Search bar with button-->
+                    <div class="col-12 col-sm-9 col-lg-10">
+                        <form class="d-flex mt-3 mt-sm-4">
+                            <input class="form-control me-2" id="searchOrder" type="search" placeholder="Search Item"
+                                   aria-label="Search">
+                            <button id="btnSearchOrder" class="btn btn-outline-primary" type="button">Search
+                            </button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
+
         </div>
 
 
@@ -363,7 +363,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -493,10 +492,8 @@
                     </div>
                 </div>
 
-
                 <!--Item Details Title Row-->
                 <div class="p-3 rounded-3 text-dark fw-bolder mt-4 " style="text-align: center">ITEM DETAILS</div>
-
 
                 <!--Item Detail Body-->
                 <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
